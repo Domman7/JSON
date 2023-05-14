@@ -1,0 +1,325 @@
+[ {
+  "passNumber" : 1,
+  "name" : "Egor",
+  "surname" : "Manasipov",
+  "patronymic" : "Sergeevich",
+  "birthday" : 1034452800000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 1212,
+  "passportIssueDate" : 1034452800000,
+  "divisionCode" : 12113,
+  "visitedPlaces" : {
+    "2022-04-19T21:05:00.000+00:00" : {
+      "name" : "park",
+      "description" : null,
+      "price" : 550,
+      "startDate" : 1650316200000,
+      "endDate" : 1650402600000
+    },
+    "2022-04-19T22:05:00.000+00:00" : {
+      "name" : "cafe",
+      "description" : null,
+      "price" : 650,
+      "startDate" : 1650316200000,
+      "endDate" : 1650409800000
+    }
+  },
+  "id" : 1
+}, {
+  "passNumber" : 2,
+  "name" : "Anton",
+  "surname" : "Ivanov",
+  "patronymic" : "Ivanovich",
+  "birthday" : 1002830400000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 1232,
+  "passportIssueDate" : 1002830400000,
+  "divisionCode" : 12123,
+  "visitedPlaces" : {
+    "2021-04-19T21:05:00.000+00:00" : {
+      "name" : "restaurant",
+      "description" : null,
+      "price" : 250,
+      "startDate" : 1618780200000,
+      "endDate" : 1618866600000
+    },
+    "2021-04-19T22:05:00.000+00:00" : {
+      "name" : "embankment",
+      "description" : null,
+      "price" : 750,
+      "startDate" : 1618780200000,
+      "endDate" : 1618873800000
+    }
+  },
+  "id" : 2
+}, {
+  "passNumber" : 3,
+  "name" : "Ivan",
+  "surname" : "Ivanov",
+  "patronymic" : "Ivanovich",
+  "birthday" : 971208000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 214,
+  "passportIssueDate" : 971208000000,
+  "divisionCode" : 214,
+  "visitedPlaces" : {
+    "2020-04-19T21:05:00.000+00:00" : {
+      "name" : "bar",
+      "description" : null,
+      "price" : 1350,
+      "startDate" : 1587244200000,
+      "endDate" : 1587330600000
+    },
+    "2020-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 950,
+      "startDate" : 1587244200000,
+      "endDate" : 1587337800000
+    }
+  },
+  "id" : 3
+}, {
+  "passNumber" : 4,
+  "name" : "Ivan",
+  "surname" : "Ivanov",
+  "patronymic" : "Antonovich",
+  "birthday" : 1065816000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 2143,
+  "passportIssueDate" : 1065816000000,
+  "divisionCode" : 2142,
+  "visitedPlaces" : {
+    "2019-04-19T21:05:00.000+00:00" : {
+      "name" : "shop",
+      "description" : null,
+      "price" : 2350,
+      "startDate" : 1555621800000,
+      "endDate" : 1555708200000
+    },
+    "2019-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 2250,
+      "startDate" : 1555621800000,
+      "endDate" : 1555715400000
+    }
+  },
+  "id" : 4
+}, {
+  "passNumber" : 5,
+  "name" : "Egor",
+  "surname" : "Petrov",
+  "patronymic" : "Sergeevich",
+  "birthday" : 1034452800000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 12122,
+  "passportIssueDate" : 1034452800000,
+  "divisionCode" : 121132,
+  "visitedPlaces" : {
+    "2022-04-19T21:05:00.000+00:00" : {
+      "name" : "park",
+      "description" : null,
+      "price" : 550,
+      "startDate" : 1650316200000,
+      "endDate" : 1650402600000
+    },
+    "2022-04-19T22:05:00.000+00:00" : {
+      "name" : "cafe",
+      "description" : null,
+      "price" : 650,
+      "startDate" : 1650316200000,
+      "endDate" : 1650409800000
+    }
+  },
+  "id" : 5
+}, {
+  "passNumber" : 6,
+  "name" : "Anton",
+  "surname" : "Sidorov",
+  "patronymic" : "Ivanovich",
+  "birthday" : 1002830400000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 12322,
+  "passportIssueDate" : 1002830400000,
+  "divisionCode" : 121232,
+  "visitedPlaces" : {
+    "2021-04-19T21:05:00.000+00:00" : {
+      "name" : "restaurant",
+      "description" : null,
+      "price" : 250,
+      "startDate" : 1618780200000,
+      "endDate" : 1618866600000
+    },
+    "2021-04-19T22:05:00.000+00:00" : {
+      "name" : "embankment",
+      "description" : null,
+      "price" : 750,
+      "startDate" : 1618780200000,
+      "endDate" : 1618873800000
+    }
+  },
+  "id" : 6
+}, {
+  "passNumber" : 7,
+  "name" : "Ivan",
+  "surname" : "Vasiliev",
+  "patronymic" : "Ivanovich",
+  "birthday" : 971208000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 2142,
+  "passportIssueDate" : 971208000000,
+  "divisionCode" : 2142,
+  "visitedPlaces" : {
+    "2020-04-19T21:05:00.000+00:00" : {
+      "name" : "bar",
+      "description" : null,
+      "price" : 1350,
+      "startDate" : 1587244200000,
+      "endDate" : 1587330600000
+    },
+    "2020-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 950,
+      "startDate" : 1587244200000,
+      "endDate" : 1587337800000
+    }
+  },
+  "id" : 7
+}, {
+  "passNumber" : 8,
+  "name" : "Ivan",
+  "surname" : "Sherov",
+  "patronymic" : "Antonovich",
+  "birthday" : 1065816000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 21432,
+  "passportIssueDate" : 1065816000000,
+  "divisionCode" : 21422,
+  "visitedPlaces" : {
+    "2019-04-19T21:05:00.000+00:00" : {
+      "name" : "shop",
+      "description" : null,
+      "price" : 2350,
+      "startDate" : 1555621800000,
+      "endDate" : 1555708200000
+    },
+    "2019-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 2250,
+      "startDate" : 1555621800000,
+      "endDate" : 1555715400000
+    }
+  },
+  "id" : 8
+}, {
+  "passNumber" : 9,
+  "name" : "Egor",
+  "surname" : "Snegov",
+  "patronymic" : "Sergeevich",
+  "birthday" : 1034452800000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 12121,
+  "passportIssueDate" : 1034452800000,
+  "divisionCode" : 121131,
+  "visitedPlaces" : {
+    "2022-04-19T21:05:00.000+00:00" : {
+      "name" : "park",
+      "description" : null,
+      "price" : 550,
+      "startDate" : 1650316200000,
+      "endDate" : 1650402600000
+    },
+    "2022-04-19T22:05:00.000+00:00" : {
+      "name" : "cafe",
+      "description" : null,
+      "price" : 650,
+      "startDate" : 1650316200000,
+      "endDate" : 1650409800000
+    }
+  },
+  "id" : 9
+}, {
+  "passNumber" : 10,
+  "name" : "Anton",
+  "surname" : "Radin",
+  "patronymic" : "Ivanovich",
+  "birthday" : 1002830400000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 12321,
+  "passportIssueDate" : 1002830400000,
+  "divisionCode" : 121231,
+  "visitedPlaces" : {
+    "2021-04-19T21:05:00.000+00:00" : {
+      "name" : "restaurant",
+      "description" : null,
+      "price" : 250,
+      "startDate" : 1618780200000,
+      "endDate" : 1618866600000
+    },
+    "2021-04-19T22:05:00.000+00:00" : {
+      "name" : "embankment",
+      "description" : null,
+      "price" : 750,
+      "startDate" : 1618780200000,
+      "endDate" : 1618873800000
+    }
+  },
+  "id" : 10
+}, {
+  "passNumber" : 11,
+  "name" : "Ivan",
+  "surname" : "Andreev",
+  "patronymic" : "Ivanovich",
+  "birthday" : 971208000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 2141,
+  "passportIssueDate" : 971208000000,
+  "divisionCode" : 2141,
+  "visitedPlaces" : {
+    "2020-04-19T21:05:00.000+00:00" : {
+      "name" : "bar",
+      "description" : null,
+      "price" : 1350,
+      "startDate" : 1587244200000,
+      "endDate" : 1587330600000
+    },
+    "2020-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 950,
+      "startDate" : 1587244200000,
+      "endDate" : 1587337800000
+    }
+  },
+  "id" : 11
+}, {
+  "passNumber" : 12,
+  "name" : "Ivan",
+  "surname" : "Sardinov",
+  "patronymic" : "Antonovich",
+  "birthday" : 1065816000000,
+  "birthPlace" : "Saratov",
+  "passportNumber" : 21431,
+  "passportIssueDate" : 1065816000000,
+  "divisionCode" : 21421,
+  "visitedPlaces" : {
+    "2019-04-19T21:05:00.000+00:00" : {
+      "name" : "shop",
+      "description" : null,
+      "price" : 2350,
+      "startDate" : 1555621800000,
+      "endDate" : 1555708200000
+    },
+    "2019-04-19T22:05:00.000+00:00" : {
+      "name" : "market",
+      "description" : null,
+      "price" : 2250,
+      "startDate" : 1555621800000,
+      "endDate" : 1555715400000
+    }
+  },
+  "id" : 12
+} ]
