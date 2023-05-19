@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
 import com.fasterxml.jackson.core.JsonParser;
 
 public class Main {
@@ -145,8 +146,8 @@ public class Main {
                         new GregorianCalendar(2019, Calendar.APRIL, 20, 3,10).getTime()));
 
         guests.add(new Guest(8, 8, "Ivan", "Sherov", "Antonovich",
-                new GregorianCalendar(2003, Calendar.OCTOBER, 11).getTime(),
-                "Saratov", 21432, new GregorianCalendar(2003, Calendar.OCTOBER, 11).getTime(),
+                new GregorianCalendar(2005, Calendar.OCTOBER, 11).getTime(),
+                "Saratov", 21432, new GregorianCalendar(2005, Calendar.OCTOBER, 11).getTime(),
                 21422, p));
 
         p = new TreeMap<>();
@@ -179,8 +180,8 @@ public class Main {
                         new GregorianCalendar(2021, Calendar.APRIL, 20, 3,10).getTime()));
 
         guests.add(new Guest(10, 10, "Anton", "Radin", "Ivanovich",
-                new GregorianCalendar(2001, Calendar.OCTOBER, 12).getTime(),
-                "Saratov", 12321, new GregorianCalendar(2001, Calendar.OCTOBER, 12).getTime(),
+                new GregorianCalendar(2006, Calendar.OCTOBER, 12).getTime(),
+                "Saratov", 12321, new GregorianCalendar(2006, Calendar.OCTOBER, 12).getTime(),
                 121231, p));
 
         p = new TreeMap<>();
@@ -190,8 +191,8 @@ public class Main {
                         new GregorianCalendar(2020, Calendar.APRIL, 19, 1,10).getTime(),
                         new GregorianCalendar(2020, Calendar.APRIL, 20, 1,10).getTime()));
 
-        p.put( new GregorianCalendar(2020, Calendar.APRIL, 20, 2,5).getTime(),
-                new Period("market", null, 950,
+        p.put( new GregorianCalendar(2010, Calendar.APRIL, 20, 2,5).getTime(),
+                new Period("planetarium", null, 950,
                         new GregorianCalendar(2020, Calendar.APRIL, 19, 1,10).getTime(),
                         new GregorianCalendar(2020, Calendar.APRIL, 20, 3,10).getTime()));
 
@@ -202,10 +203,10 @@ public class Main {
 
         p = new TreeMap<>();
 
-        p.put( new GregorianCalendar(2019, Calendar.APRIL, 20, 1,5).getTime(),
+        p.put( new GregorianCalendar(2024, Calendar.APRIL, 20, 1,5).getTime(),
                 new Period("shop", null, 2350,
-                        new GregorianCalendar(2019, Calendar.APRIL, 19, 1,10).getTime(),
-                        new GregorianCalendar(2019, Calendar.APRIL, 20, 1,10).getTime()));
+                        new GregorianCalendar(2024, Calendar.APRIL, 19, 1,10).getTime(),
+                        new GregorianCalendar(2025, Calendar.APRIL, 20, 1,10).getTime()));
 
         p.put( new GregorianCalendar(2019, Calendar.APRIL, 20, 2,5).getTime(),
                 new Period("market", null, 2250,
@@ -213,7 +214,7 @@ public class Main {
                         new GregorianCalendar(2019, Calendar.APRIL, 20, 3,10).getTime()));
 
         guests.add(new Guest(12, 12, "Ivan", "Sardinov", "Antonovich",
-                new GregorianCalendar(2003, Calendar.OCTOBER, 11).getTime(),
+                new GregorianCalendar(2003, Calendar.DECEMBER, 11).getTime(),
                 "Saratov", 21431, new GregorianCalendar(2003, Calendar.OCTOBER, 11).getTime(),
                 21421, p));
 
@@ -224,11 +225,45 @@ public class Main {
         String result = objectMapper.writeValueAsString(guests);
         System.out.println(result);
 
+        System.out.println();
+
         byte[] jsonData = Files.readAllBytes(Paths.get("guests.json"));
         ObjectMapper mapperBack = new ObjectMapper();
         Guest[] resultBack = mapperBack.readValue(jsonData, Guest[].class);
         for (Guest guest :resultBack)
             System.out.println(guest);
+
+        System.out.println();
+
+        //Поиск гостей по дню рождения(без года)
+        Calendar cal = new GregorianCalendar(2003, Calendar.DECEMBER, 11);
+        var match = guests.stream()
+                .filter(c -> c.getBirthday().getMonth() == cal.getTime().getMonth() && c.getBirthday().getDay() == cal.getTime().getDay())
+                .collect(Collectors.toList());
+        System.out.println(match.toString());
+
+        //Поиск гостей по дню рождения(диапазон лет)
+        Calendar calStart = new GregorianCalendar(2005, Calendar.DECEMBER, 11);
+        Calendar calEnd = new GregorianCalendar(2006, Calendar.OCTOBER, 11);
+        match = guests.stream()
+                .filter(c -> c.getBirthday().getYear() >= calStart.getTime().getYear() && c.getBirthday().getYear() <= calEnd.getTime().getYear())
+                .collect(Collectors.toList());
+        System.out.println(match.toString());
+
+        //Поиск гостей, имеющих право посещения в конкретный день
+        var calDay = new GregorianCalendar(2024, Calendar.APRIL, 19, 1,10);
+        match = guests.stream()
+                .filter(c -> c.availableDate(calDay))
+                .collect(Collectors.toList());
+        System.out.println(match.toString());
+
+        //Поиск гостей, присутствовавших в конкретное время в конкретном помещении
+        var exactTime = new GregorianCalendar(2010, Calendar.APRIL, 20, 2,5);
+        String exactPlace = "planetarium";
+        match = guests.stream()
+                .filter(c -> c.exactTime(exactTime, exactPlace))
+                .collect(Collectors.toList());
+        System.out.println(match.toString());
 
     }
 }

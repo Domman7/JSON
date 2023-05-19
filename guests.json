@@ -192,10 +192,10 @@
   "name" : "Ivan",
   "surname" : "Sherov",
   "patronymic" : "Antonovich",
-  "birthday" : 1065816000000,
+  "birthday" : 1128974400000,
   "birthPlace" : "Saratov",
   "passportNumber" : 21432,
-  "passportIssueDate" : 1065816000000,
+  "passportIssueDate" : 1128974400000,
   "divisionCode" : 21422,
   "visitedPlaces" : {
     "2019-04-19T21:05:00.000+00:00" : {
@@ -246,10 +246,10 @@
   "name" : "Anton",
   "surname" : "Radin",
   "patronymic" : "Ivanovich",
-  "birthday" : 1002830400000,
+  "birthday" : 1160596800000,
   "birthPlace" : "Saratov",
   "passportNumber" : 12321,
-  "passportIssueDate" : 1002830400000,
+  "passportIssueDate" : 1160596800000,
   "divisionCode" : 121231,
   "visitedPlaces" : {
     "2021-04-19T21:05:00.000+00:00" : {
@@ -279,19 +279,19 @@
   "passportIssueDate" : 971208000000,
   "divisionCode" : 2141,
   "visitedPlaces" : {
+    "2010-04-19T22:05:00.000+00:00" : {
+      "name" : "planetarium",
+      "description" : null,
+      "price" : 950,
+      "startDate" : 1587244200000,
+      "endDate" : 1587337800000
+    },
     "2020-04-19T21:05:00.000+00:00" : {
       "name" : "bar",
       "description" : null,
       "price" : 1350,
       "startDate" : 1587244200000,
       "endDate" : 1587330600000
-    },
-    "2020-04-19T22:05:00.000+00:00" : {
-      "name" : "market",
-      "description" : null,
-      "price" : 950,
-      "startDate" : 1587244200000,
-      "endDate" : 1587337800000
     }
   },
   "id" : 11
@@ -300,25 +300,25 @@
   "name" : "Ivan",
   "surname" : "Sardinov",
   "patronymic" : "Antonovich",
-  "birthday" : 1065816000000,
+  "birthday" : 1071090000000,
   "birthPlace" : "Saratov",
   "passportNumber" : 21431,
   "passportIssueDate" : 1065816000000,
   "divisionCode" : 21421,
   "visitedPlaces" : {
-    "2019-04-19T21:05:00.000+00:00" : {
-      "name" : "shop",
-      "description" : null,
-      "price" : 2350,
-      "startDate" : 1555621800000,
-      "endDate" : 1555708200000
-    },
     "2019-04-19T22:05:00.000+00:00" : {
       "name" : "market",
       "description" : null,
       "price" : 2250,
       "startDate" : 1555621800000,
       "endDate" : 1555715400000
+    },
+    "2024-04-19T21:05:00.000+00:00" : {
+      "name" : "shop",
+      "description" : null,
+      "price" : 2350,
+      "startDate" : 1713474600000,
+      "endDate" : 1745097000000
     }
   },
   "id" : 12

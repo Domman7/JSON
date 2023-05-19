@@ -100,6 +100,30 @@ public class Guest {
     public void addVisitedPlaces(Date date, Period places){
         visitedPlaces.put(date, places);
     }
+    public boolean availableDate(GregorianCalendar day) {
+
+        for(var item: this.visitedPlaces.entrySet()){
+            if(item.getValue().getStartDate().getTime() <= day.getTime().getTime()
+            && item.getValue().getEndDate().getTime() >= day.getTime().getTime()) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public boolean exactTime(GregorianCalendar day, String place){
+        for(var item: this.visitedPlaces.entrySet()){
+            if(item.getKey().getTime() == day.getTime().getTime()
+                    && item.getValue().getName().equals(place)) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     @Override
     public String toString() {
